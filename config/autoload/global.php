@@ -14,9 +14,10 @@
 return array(
     'db' => array(
         'driver' => 'Pdo',
-        'dsn' => 'mysql:dbname=zend_test;host=localhost',
+        'dsn' => 'mysql:host=127.0.0.1:3306;dbname=zend_test',
         'driver_options' => array(
-            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+            //PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+            1042 => 'SET NAMES \'UTF8\''
         ),
     ),
     'service_manager' => array(
